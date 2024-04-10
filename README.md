@@ -15,9 +15,25 @@ echo $0
 ````
 You should get a response that shows ```-zsh``` (Mac’s default to zsh)
 ### Install a color scheme
-    - Go to <https://iterm2colorschemes.com> and choose a color scheme
-    - In the terminal, go to your home folder ~/ and create a file named .gruvbox.itermcolors
-    - paste in the xml from the color scheme you chose on iterm2.colorschemes.com
+- Go to <https://iterm2colorschemes.com> and choose a color scheme
+- In the terminal, go to your home folder ~/ and create a file named .gruvbox.itermcolors
+````
+cd ~\
+touch .gruvbox.itermcolors
+````
+- Open the newly created .gruvbox.itermcolors file in your favorite editor. In this example, we will use VS Code
+````
+code ~\.gruvbox.itermcolors
+````
+- If VSCode does not launch, you may need to configure VSCode to launch from the command line.  [jump to the section below](#Launching-VSCode-from-the-command-line)I will add the directions below for your reference.
+[The section below, Launching VS Code from the command line](#Launching-VSCode-from-the-command-line)
+
+- **Launching VSCode from the command line**
+  - Launch VS Code
+  - Open the Command Palette (Cmd+Shift+P) and type 'shell command' to find the Shell Command:  Install 'code' command in PATH command.
+  - 
+- Paste in the xml code from the color scheme you chose on <https://iterm2.colorschemes.com>
+- 
 ### Enable the new color scheme
     * In iTerm2, open Settings and choose the Profiles icon at the top of the dialog box.
     * Choose the Colors tab
@@ -42,7 +58,7 @@ Installation:
     * In the text tab, choose the Font Dropdown and find your newly installed font.
     * 
 
-## Powerlevel10k
+### Powerlevel10k
 
 Installation
 
@@ -56,4 +72,4 @@ p10k configure
 * Enter the following command line to start the Powerlevel10k config wizard:
     *  source ~/.zshrc
 
-This guide is based on a video created by the Typecraft YouTube channel. It attempts to be a bit more specific about the steps for those who are just starting out on the command line.
+### Launching VSCode from the command line
