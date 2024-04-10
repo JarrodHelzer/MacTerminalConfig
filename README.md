@@ -63,7 +63,8 @@ Installation:
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-''''
+```
+
 - Add fonts to show icons in certain places
   - Go to nerdfonts.com
   - Click the Downloads button
@@ -92,7 +93,9 @@ p10k configure
 ## Launching VS Code from the command line
 
 - Launch VS Code
+
   - Open the Command Palette (Cmd+Shift+P) and type `'shell command'` to find the **Shell Command: Install 'code' command in PATH command.**
-  - ![Image of VS Code Command Palette](./images/codeCommandLine.png)
-    \_ Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
-```
+
+  ![Image of VS Code Command Palette](./images/codeCommandLine.png)
+
+  - Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
