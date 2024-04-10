@@ -36,15 +36,14 @@ touch .gruvbox.itermcolors
 code ~\.gruvbox.itermcolors
 ```
 
-- If VSCode does not launch, you may need to configure VSCode to launch from the command line. [jump to the section below](#Launching-VSCode-from-the-command-line)I will add the directions below for your reference.
-  [The section below, Launching VS Code from the command line](#Launching-VSCode-from-the-command-line)
+- If VSCode does not launch, you may need to configure VSCode to launch from the command line. [Follow this link to the VS Code from command line section below.](#Launching-VS-Code-from-the-command-line)  Return here once you have completed those steps and you are able to launch VS Code by typing code in any terminal session.
 
-- **Launching VSCode from the command line**
-  - Launch VS Code
-  - Open the Command Palette (Cmd+Shift+P) and type 'shell command' to find the Shell Command: Install 'code' command in PATH command.
-  -
+- Ensure you have started your code editor by running the command below:
+```
+code ~\.gruvbox.itermcolors
+```
 - Paste in the xml code from the color scheme you chose on <https://iterm2.colorschemes.com>
--
+
 
 ### Enable the new color scheme
 
@@ -85,9 +84,9 @@ p10k configure
 - Enter the following command line to start the Powerlevel10k config wizard:
   - source ~/.zshrc
 
-### Launching VSCode from the command line
+### Launching VS Code from the command line
 
 - Launch VS Code
-  - Open the Command Palette (Cmd+Shift+P) and type `'shell command'` to find the **_ Shell Command: Install 'code' command in PATH command. _**
+  - Open the Command Palette (Cmd+Shift+P) and type `'shell command'` to find the **Shell Command: Install 'code' command in PATH command.**
   - ![Image of VS Code Command Palette](./images/codeCommandLine.png)
-    \_ Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
+  _ Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
