@@ -9,7 +9,7 @@ This guide is based on a video created by the Typecraft YouTube channel. It atte
 ### Installation:
 
 ```
-brew install —cask iterm2
+brew install --cask iterm2
 ```
 
 Confirm your default shell is zsh
@@ -23,42 +23,47 @@ You should get a response that shows `-zsh` (Mac’s default to zsh)
 ### Install a color scheme
 
 - Go to <https://iterm2colorschemes.com> and choose a color scheme
-- In the terminal, go to your home folder ~/ and create a file named .gruvbox.itermcolors
+- In the terminal, go to your home folder ~/ and create a file named gruvbox.itermcolors
 
 ```
 cd ~\
-touch .gruvbox.itermcolors
+touch gruvbox.itermcolors
 ```
 
-- Open the newly created .gruvbox.itermcolors file in your favorite editor. In this example, we will use VS Code
+- Open the newly created gruvbox.itermcolors file in your favorite editor. In this example, we will use VS Code
 
 ```
-code ~\.gruvbox.itermcolors
+code ~\gruvbox.itermcolors
 ```
 
-- If VSCode does not launch, you may need to configure VSCode to launch from the command line. [Follow this link to the VS Code from command line section below.](#Launching-VS-Code-from-the-command-line)  Return here once you have completed those steps and you are able to launch VS Code by typing code in any terminal session.
+- If VSCode does not launch, you may need to configure VSCode to launch from the command line. [Follow this link to the VS Code from command line section below.](#Launching-VS-Code-from-the-command-line) Return here once you have completed those steps and you are able to launch VS Code by typing code in any terminal session.
 
 - Ensure you have started your code editor by running the command below:
-```
-code ~\.gruvbox.itermcolors
-```
-- Paste in the xml code from the color scheme you chose on <https://iterm2.colorschemes.com>
 
+```
+code ~\gruvbox.itermcolors
+```
+
+- Paste in the xml code from the color scheme you chose on <https://iterm2.colorschemes.com> and then save and close the file.
 
 ### Enable the new color scheme
 
-    * In iTerm2, open Settings and choose the Profiles icon at the top of the dialog box.
-    * Choose the Colors tab
-    * Click the Color Presets drop-down in the lower right corner
-    * Choose Import
-    * Go to your home folder and choose the gruvbox.itermcolors file you created.
-    * Click the Color Presets drop-down again.  You should now see Gruvbox in the list.  Choose Gruvbox to change to your new color scheme.  If you do not like the color scheme you chose, try again or take a look at the Smooooooth preset.
+- In iTerm2, open Settings and choose the Profiles icon at the top of the dialog box.
+- Choose the Colors tab
+- Click the Color Presets drop-down in the lower right corner
+- Choose Import
+- Go to your home folder and choose the gruvbox.itermcolors file you created.
+- Click the Color Presets drop-down again. You should now see Gruvbox in the list. Choose Gruvbox to change to your new color scheme. If you do not like the color scheme you chose, try again or take a look at the Smooooooth preset.
 
-### oh-my-zsh (oh my z-shell)
+## oh-my-zsh (oh my z-shell)
 
 Installation:
 
-- sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+-Run the following command to download and install oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+''''
 - Add fonts to show icons in certain places
   - Go to nerdfonts.com
   - Click the Downloads button
@@ -69,7 +74,7 @@ Installation:
   - In the text tab, choose the Font Dropdown and find your newly installed font.
   -
 
-### Powerlevel10k
+## Powerlevel10k
 
 Installation
 
@@ -84,9 +89,10 @@ p10k configure
 - Enter the following command line to start the Powerlevel10k config wizard:
   - source ~/.zshrc
 
-### Launching VS Code from the command line
+## Launching VS Code from the command line
 
 - Launch VS Code
   - Open the Command Palette (Cmd+Shift+P) and type `'shell command'` to find the **Shell Command: Install 'code' command in PATH command.**
   - ![Image of VS Code Command Palette](./images/codeCommandLine.png)
-  _ Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
+    \_ Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
+```
