@@ -92,7 +92,10 @@ echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.
 - Update the zsh theme variable to ZSH_THEME= “powerlevel10k/powerlevel10k”
 - Save and close the file
 - Enter the following command line to start the Powerlevel10k config wizard:
-  - source ~/.zshrc
+
+```
+  source ~/.zshrc
+```
 
 ## Launching VS Code from the command line
 
