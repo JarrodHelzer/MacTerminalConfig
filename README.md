@@ -18,7 +18,11 @@ Confirm your default shell is zsh
 echo $0
 ```
 
-You should get a response that shows `-zsh` (Mac’s default to zsh)
+You should get a response that shows `-zsh` If you have some other default shell, change it to zsh by entering the following command:
+
+```
+chsh -s $(which zsh)
+```
 
 ### Install a color scheme
 
@@ -26,14 +30,14 @@ You should get a response that shows `-zsh` (Mac’s default to zsh)
 - In the terminal, go to your home folder ~/ and create a file named gruvbox.itermcolors
 
 ```
-cd ~\
+cd ~/
 touch gruvbox.itermcolors
 ```
 
 - Open the newly created gruvbox.itermcolors file in your favorite editor. In this example, we will use VS Code
 
 ```
-code ~\gruvbox.itermcolors
+code ~/gruvbox.itermcolors
 ```
 
 - If VSCode does not launch, you may need to configure VSCode to launch from the command line. [Follow this link to the VS Code from command line section below.](#Launching-VS-Code-from-the-command-line) Return here once you have completed those steps and you are able to launch VS Code by typing code in any terminal session.
@@ -41,7 +45,7 @@ code ~\gruvbox.itermcolors
 - Ensure you have started your code editor by running the command below:
 
 ```
-code ~\gruvbox.itermcolors
+code ~/gruvbox.itermcolors
 ```
 
 - Paste in the xml code from the color scheme you chose on <https://iterm2.colorschemes.com> and then save and close the file.
@@ -95,6 +99,36 @@ echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.
 
 ```
   source ~/.zshrc
+```
+
+## Color LS
+
+### Installation
+
+- Run the following command to install Color LS
+
+```
+sudo gem install colorls
+```
+
+### Configure Color LS
+
+- Add an alias to your .zshrc file so we don't have to type colorls every time.
+
+```
+code ~/.zshrc
+```
+
+- Add the following line to the bottom of your ~/.zshrc file
+
+```
+alias ls='colorls'
+```
+
+- Enter the following command to load the new settings from ~/.zshrc
+
+```
+source ~/.zshrc
 ```
 
 ## Launching VS Code from the command line
