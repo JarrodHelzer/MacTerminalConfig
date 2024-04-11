@@ -2,7 +2,7 @@
 
 Mac Terminal Eye Candy Terminal Mods
 
-This guide is based on a video created by the Typecraft YouTube channel. It attempts to be a bit more specific about the steps for those who are just starting out on the command line.
+This guide is based on a video created by the Typecraft YouTube channel <https://www.youtube.com/@typecraft_dev>. It attempts to be a bit more specific about the steps for those who are just starting out on the command line.
 
 ## iTerm2
 
