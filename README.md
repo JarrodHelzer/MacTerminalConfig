@@ -57,32 +57,36 @@ code ~\gruvbox.itermcolors
 
 ## oh-my-zsh (oh my z-shell)
 
-Installation:
+### Installation:
 
--Run the following command to download and install oh-my-zsh
+- Run the following command to download and install oh-my-zsh
 
 ```
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-- Add fonts to show icons in certain places
-  - Go to nerdfonts.com
-  - Click the Downloads button
-  - I’m currently using Hack Nerd Font, 3270 Nerd Font is cool as well. Find something you lik and click Download.
-  - Unzip the file that just downloaded and then go to the folder that was created after you unzip the file.
-  - Look through the fonts in the newly created folder. You should see some fonts that have the word mono in the name. Typically you want to choose the file that has mono and regular or normal in the name. You can click on each to see a preview next to the file. Once you find the correct fil, double click the file. You should see a dilog box load from Font Book that shows your new font with the option to click Install in the lower right corner. Click the Install button. Close the Font Book app once the font is installed.
-  - Open iterm2 and choose Settings. In the Settings dialog box, choose Profiles and then select the Text tab.
-  - In the text tab, choose the Font Dropdown and find your newly installed font.
-  -
+### Add fonts to show icons in certain places
+
+- Go to <https://nerdfonts.com>
+- Click the Downloads button
+- I’m currently using Hack Nerd Font, 3270 Nerd Font is cool as well. Find something you lik and click Download.
+- Unzip the file that you just downloaded and then go to the folder that was created after you unziped the file.
+- Look through the fonts in the newly created folder. You should see some fonts that have the word mono in the name. Typically you want to choose the file that has mono and regular or normal in the name. These are typically designed for the terminal. You can click on each to see a preview next to the file. Once you find the correct fil, double click the file. You should see a dialog box load from Font Book that shows your new font with the option to click Install in the lower right corner. Click the Install button. Close the Font Book app once the font is installed.
+- Open iterm2 and choose Settings. In the Settings dialog box, choose Profiles and then select the Text tab.
+- In the Text tab, choose the Font dropdown and find your newly installed font.
 
 ## Powerlevel10k
 
-Installation
+### Installation
 
-- brew install powerlevel10k
-- echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+Enter the following on the command line to install Powerlevel10k
 
-p10k configure
+```
+brew install powerlevel10k
+echo "source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+```
+
+### p10k configure
 
 - Open your .zshrc file located in your home folder ~/.zshrc
 - Update the zsh theme variable to ZSH_THEME= “powerlevel10k/powerlevel10k”
@@ -98,4 +102,4 @@ p10k configure
 
   ![Image of VS Code Command Palette](./images/codeCommandLine.png)
 
-  - Restart the terminal for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
+  - Restart the iTerm2 for the new $PATH value to take effect. You'll be able to type `` `code` `` in any folder to start editing files in that folder.
